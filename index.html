@@ -1,0 +1,83 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body bgcolor=pink>
+
+<div>
+  <img src="xxi.png" width=100% height=40%>
+</div>
+
+<div class="w3-bar w3-blue">
+	<button class="w3-bar-item w3-button" onclick="openFilm('Kingsman')">The King's Man</button>
+	<button class="w3-bar-item w3-button" onclick="openFilm('NWH')">Spiderman : NWH</button>
+	<button class="w3-bar-item w3-button" onclick="openFilm('Scream')">Scream</button>
+	<button class="w3-bar-item w3-button" onclick="openFilm('Sing')">Sing 2</button>
+	<button class="w3-bar-item w3-button" onclick="openFilm('Profile')">Profile</button>
+</div>
+
+<div id="Home" class="w3-container film w3-animate-zoom">
+<br><br>
+	<h1><Center>WELCOME</h1>
+	<h2><Center>Nonton apa hari ini?</h2>
+</div>
+
+<div id="Kingsman" class="w3-container film w3-center w3-animate-fading" style="display:none">
+	<h2><center><b>The King's Man</b></h2>
+		<p>Ketika kumpulan tiran terburuk dan kriminal berkumpul untuk merencanakan perang untuk melenyapkan jutaan orang, 
+		seorang pria - dengan bantuan putranya, para pembantunya yang dapat dipercaya, dan gaya untuk menyisihkan - harus 
+		berpacu dengan waktu untuk menghentikan mereka.</p>
+	<img src="kingsman.jpg" class="w3-panel w3-blue w3-padding-16 w3-card-4" width=474px height=702px>
+</div>
+
+<div id="NWH" class="w3-container film w3-center w3-animate-bottom" style="display:none">
+	<h2><center><b>Spider-Man : No Way Home</b></h2>
+		<p>Identitas Spider-Man sekarang sudah terungkap, dan Peter meminta bantuan Doctor Strange. 
+		namun sebuah kesalahan terjadi, dan itu justru mengundang musuh berbahaya dari dunia lain, 
+		mereka mulai bermunculan. Hal itu memaksa Peter mencari apa makna sebenarnya menjadi Spider-Man.</p> 
+	<img src="nwh.jpg" class="w3-panel w3-blue w3-padding-16 w3-card-4" width=474px height=702px>
+</div>
+
+<div id="Scream" class="w3-container film w3-center w3-animate-top" style="display:none">
+	<h2><center><b>Scream</b></h2>
+		<p>Dua puluh lima tahun setelah serangkaian pembunuhan brutal mengejutkan kota Woodsboro yang tenang, 
+		seorang pembunuh baru telah mengenakan topeng Ghostface dan mulai menargetkan sekelompok remaja untuk
+		menghidupkan kembali rahasia dari masa lalu kota yang mematikan.</p>
+	<img src="scream.jpg" class="w3-panel w3-blue w3-padding-16 w3-card-4" width=474px height=702px>
+</div>
+
+<div id="Sing" class="w3-container film w3-center w3-animate-zoom" style="display:none">
+	<h2><center><b>Sing 2</b></h2>
+		<p>Petualangan Buster Moon dan teman-temannya kembali, kali ini mereka harus membujuk bintang 
+		rock Clay Calloway untuk bergabung dengan mereka untuk sebuah pembukaan pertunjukan baru.</p>
+	<img src="sing2.jpg" class="w3-panel w3-blue w3-padding-16 w3-card-4" width=474px height=702px>
+</div>
+
+<div id="Profile" class="w3-container film w3-center w3-animate-zoom" style="display:none">
+<br>
+	<div class="w3-container"> 
+	<div class="w3-card-4">
+		<div class="w3-container w3-blue">
+			<h2><center>PROFILE</h2>
+		</div>
+		<br>
+<center><img src="200570.jpg" class="w3-panel w3-blue w3-circle w3-padding-16 w3-card-4" width=474px height=485px>
+ <p><center><b>NAMA  : NAUFAL ATSARI SOBUR</p>
+ <p><center><b> NIM  : 10121206</p>
+ <p><center><b>KELAS : IF-6</p>
+ <br>
+</div>
+
+<script>
+function openFilm(namaFilm) {
+ var i;
+ var x = document.getElementsByClassName("film");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namaFilm).style.display = "block"; 
+}
+
+</script>
+</body>
+</html>
